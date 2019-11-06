@@ -3,7 +3,7 @@ from pathlib import Path
 
 import pandas as pd
 
-import btc_wrangler.app.btc as btc
+import btc_etl.app.btc as btc
 
 
 class TestReader(unittest.TestCase):

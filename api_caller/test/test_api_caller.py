@@ -23,7 +23,7 @@ from api_caller.test.mock_server import get_free_port, MockServerRequestHandler
 
 
 mock_port = get_free_port()
-mock_users_url = 'http://localhost:{port}/users'.format(port=mock_port)
+mock_url = 'http://localhost:{port}'.format(port=mock_port)
 headers = {'username': 'Vlad',
            'password': '2019'}
 
@@ -43,9 +43,9 @@ class TestHTTPConnection(unittest.TestCase):
         self.mock_server_thread.setDaemon(True)
         self.mock_server_thread.start()
 
-        self.con1 = api_caller.HTTPConnection(mock_users_url, None, None)
-        self.con2 = api_caller.HTTPConnection(mock_users_url, ssl_api, None)
-        self.con3 = api_caller.HTTPConnection(mock_users_url, None, headers)
+        self.con1 = api_caller.HTTPConnection(mock_url, None, None)
+        self.con2 = api_caller.HTTPConnection(mock_url, ssl_api, None)
+        self.con3 = api_caller.HTTPConnection(mock_url, None, headers)
 
     def testReadingConnection(self):
         response_simple = self.con1.get_data()
