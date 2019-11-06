@@ -1,0 +1,4 @@
+date,price(USD),exchangeVolume(USD),generatedCoins
+2009-01-09,1,700,2
+2009-01-10,2,800,3
+2009-01-11,22,,2

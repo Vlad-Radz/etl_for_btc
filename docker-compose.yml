@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+      exc_rate_getter:
+        build: 
+            context: .
+            dockerfile: Dockerfile_exc_rate
+        ports:
+          - "8002:5000"
+      btc_etl:
+        build: 
+            context: .
+            dockerfile: Dockerfile_btc
+        volumes: 
+          - my_volume:/my_volume
+
+volumes:
+  my_volume:
