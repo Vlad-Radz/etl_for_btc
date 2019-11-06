@@ -24,8 +24,11 @@ For both apps unit tests were written, using the `unittest` package from Python'
 
 ## To be improved 
 It is clear, that since it is just a demonstration app for a very small task, and made in short term, there are some things that could be done better. These are just some things that could be done better: 
+- quality checker for data (duplicates for date, missing days, missing prices)
 - division of logic into class may be probably better.
 - `btc` app can not just call the `api_caller` service, but give arguments: URL and pattern for extraxting the required value.
 - Unit tests lack proper documentation, although names of the tests should prodvide you with understanding of what they are testing.
 - Unit tests are not being executed automatically, e.g. with a Travis CI script.
 - In ideal case 2 projects should have each own repository. 
+- use a relational database for storing data (also in a container, since just a demo app)
+- configuration file for variables 
