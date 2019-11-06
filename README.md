@@ -32,3 +32,9 @@ It is clear, that since it is just a demonstration app for a very small task, an
 - In ideal case 2 projects should have each own repository. 
 - use a relational database for storing data (also in a container, since just a demo app)
 - configuration file for variables 
+- rename columns to python-style names (lowercase, with underscores)
+- graph: 
+  - show min and max values
+  - show different scales of colors (visually prettier)
+  - show more granularly (dates)
+  - show correlation with another attributes?
