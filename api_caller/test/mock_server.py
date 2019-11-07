@@ -1,7 +1,6 @@
 import socket
 import json
 from http.server import BaseHTTPRequestHandler
-import unittest
 
 import requests
 
