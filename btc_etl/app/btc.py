@@ -135,7 +135,7 @@ class MyDataFrame:
             pd.Timedelta(-days_range + 1, unit='d') + self.df[self.data.date_col].max(), periods=days_range))]
         self.df = self.df.reset_index(drop=True)
 
-    def leave_columns(self, required_cols: Set[Any]):  # надо ли тут вообще???
+    def leave_columns(self, required_cols: Set[Any]): 
         all_cols: Set[Any] = set(self.df.columns)
         diff: Set[Any] = all_cols - required_cols
         self.df.drop(diff, axis=1, inplace=True)
