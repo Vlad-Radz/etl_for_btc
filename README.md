@@ -25,6 +25,7 @@ For both apps unit tests were written, using the `unittest` package from Python'
 ## To be improved 
 It is clear, that since it is just a demonstration app for a very small task, and made in short term, there are some things that could be done better. These are just some of my ideas: 
 - quality checker for data (duplicates for date, missing days, missing prices)
+- detailed documentation of methods: "Parameters", "Raises", "Returns"
 - division of logic into class may be probably better.
 - `btc` app can not just call the `api_caller` service, but send arguments, e.g. required URL and pattern for extracting required value.
 - Unit tests lack proper documentation, although names of the tests should prodvide you with understanding of what they are testing.
@@ -37,4 +38,4 @@ It is clear, that since it is just a demonstration app for a very small task, an
   - show min and max values
   - show different scales of colors (visually prettier)
   - show more granularly (dates)
-  - show correlation with another attributes?
+  - show correlation with another attributes? 
